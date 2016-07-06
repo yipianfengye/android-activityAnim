@@ -49,4 +49,15 @@
         android:text="使用内置动画通过代码方式实现Activity动画切换"
         />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="使用内置动画通过style的方式实现activity动画切换"
+        />
+
 </RelativeLayout>
