@@ -8,10 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!--<item name="android:windowAnimationStyle">@style/activityAnim</item>-->
 
-        <item name="android:windowEnterTransition">@transition/activity_explode</item>
-        <!--<item name="android:windowEnterAnimation">@transition/activity_explode</item>-->
-        <item name="android:windowExitTransition">@transition/activity_explode</item>
-        <!--<item name="android:windowExitAnimation">@transition/activity_explode</item>-->
+        <!--<item name="android:windowEnterTransition">@transition/activity_explode</item>
+        <item name="android:windowExitTransition">@transition/activity_explode</item>-->
     </style>
     
     <!-- 使用style方式定义activity切换动画 -->

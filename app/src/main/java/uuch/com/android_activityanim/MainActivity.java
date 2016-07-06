@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button2 = null;
     private Button button3 = null;
     private Button button4 = null;
+    private Button button5 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.button4);
+        button5 = (Button) findViewById(R.id.button5);
     }
 
     /**
@@ -81,6 +83,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FourActivity.class);
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FiveActivity.class);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, button5, "shareNames").toBundle());
             }
         });
     }
