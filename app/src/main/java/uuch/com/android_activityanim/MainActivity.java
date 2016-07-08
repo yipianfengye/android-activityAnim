@@ -42,26 +42,38 @@ public class MainActivity extends AppCompatActivity {
      * 实现组件的初始化监听
      */
     private void initListener() {
+        /**
+         * 点击按钮,实现Activity的跳转操作
+         * 通过overridePendingTransition方法的方式实现activity的跳转动画
+         */
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_in_left);
 
-                /*new Thread(new Runnable() {
+                /*button1.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        try {
-                            Thread.sleep(1000);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                        overridePendingTransition(R.anim.slide_in_top, R.anim.slide_in_top);
                     }
-                }).start();*/
+                }, 1000);*/
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        overridePendingTransition(R.anim.slide_in_top, R.anim.slide_in_top);
+                    }
+                }).start();
+
+
             }
         });
 
+        /**
+         * 点击按钮,实现Activity的跳转操作
+         * 通过定义style的方式实现activity的跳转动画
+         */
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * 点击按钮,实现Activity的跳转操作
+         * 通过android5.0及以上代码的方式实现activity的跳转动画
+         */
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * 点击按钮,实现Activity的跳转操作
+         * 通过android5.0及以上style的方式实现activity的跳转动画
+         */
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,6 +106,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * 点击按钮,实现Activity的跳转操作
+         * 通过android5.0及以上共享组件的方式实现activity的跳转动画
+         */
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
