@@ -46,7 +46,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="使用内置动画通过代码方式实现Activity动画切换"
+        android:text="使用ActivityOptions代码方式实现Activity动画切换"
         />
 
     <Button
@@ -57,7 +57,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="使用内置动画通过style的方式实现activity动画切换"
+        android:text="使用ActivityOptions通过style的方式实现activity动画切换"
         />
 
     <Button
@@ -68,7 +68,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:text="组件过度动画"
+        android:text="使用ActivityOptions组件过度动画"
         android:background="@color/colorPrimary"
         android:transitionName="shareNames"
         />

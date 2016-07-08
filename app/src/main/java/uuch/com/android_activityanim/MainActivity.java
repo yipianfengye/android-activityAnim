@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_top, R.anim.slide_in_top);
 
                 /*button1.postDelayed(new Runnable() {
                     @Override
@@ -59,12 +60,12 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_in_top, R.anim.slide_in_top);
                     }
                 }, 1000);*/
-                new Thread(new Runnable() {
+                /*new Thread(new Runnable() {
                     @Override
                     public void run() {
                         overridePendingTransition(R.anim.slide_in_top, R.anim.slide_in_top);
                     }
-                }).start();
+                }).start();*/
 
 
             }
@@ -103,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FourActivity.class);
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                finishAfterTransition();
             }
         });
 
