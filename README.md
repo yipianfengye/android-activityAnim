@@ -1,4 +1,4 @@
-# android-activityAnim
+# android中实现Activity跳转动画的五种方式
 
 本文主要介绍了Android中五种实现Activity切换动画的实现方式。
 
