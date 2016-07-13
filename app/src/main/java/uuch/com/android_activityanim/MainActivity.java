@@ -124,4 +124,8 @@ public class MainActivity extends AppCompatActivity {
     private void test1() {
 
     }
+
+    private void test2() {
+
+    }
 }
